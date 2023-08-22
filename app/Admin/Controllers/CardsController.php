@@ -71,4 +71,10 @@ class CardsController extends AdminController
 
         return $form;
     }
+
+    public function yo()
+    {
+        $cards = Cards::all();
+        return view('cards',compact('cards'));
+    }
 }
